@@ -1,0 +1,236 @@
+.slider-tab-row{
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: 8px;
+}
+.slider-tab-row .slider-tab-col{
+	box-sizing: border-box;
+}
+.slider-tab-row .slider-tab-col1{
+	width: 21%;
+	flex: 0 0 21%;
+}
+.slider-tab-row .slider-tab-col2{
+	width: 79%;
+	flex: 0 0 79%;
+}
+.slider-admin-tab li{
+	display: block;	
+	cursor: pointer;
+	background-color: #e2e2e2;
+	padding: 10px 12px;
+	font-size: 16px;
+	font-weight: 600;
+	border-radius: 3px;
+}
+.slider-admin-tab li.active{
+	background-color: #007cba;
+	color: #fff;
+	position: relative;
+}
+.teamblock-content-wrap{
+	display: none;
+}
+.teamblock-content-wrap.active{
+	display: block;
+}
+#teamblock img{
+	width: 100px;
+	height: 50px;
+	margin-top: 15px;
+}
+.slider-admin-tab li.active::after{
+	content: "";
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-left: 16px solid #007cba;
+    border-bottom: 8px solid transparent;
+    position: absolute;
+    right: -14px;
+    top: 11px;
+}
+.teamblock-content-wrap{
+	padding: 40px;
+}
+.teamblock-content-wrap label{
+	font-size: 16px;
+    font-weight: 600;
+    display: block;
+    padding-bottom: 18px;
+}
+
+
+
+.slider-tab-row .buttonreset {
+    height: 20px;
+    margin-top: 30px;
+    margin-left: 10px;
+	background-color: #F33737;
+}
+
+.slider-tab-row .buttonreset:hover{
+	background-color: #ff0000;
+}
+
+.imgtemplate {
+	margin-right: 100px;
+}
+
+
+
+
+.sliderange {
+	margin-top: 30px;
+}
+
+
+.wp-color-result-text {
+	display: none;
+}
+
+
+
+#teamblock2 span {
+    position: relative;
+    display: inline-block;
+}
+.basic-slide {
+    display: inline-block;
+    /* width: 215px; */
+	/* height: 39px;	 */
+    color: #ffffff;
+    background: #5f5e5e;
+    border: 2px solid gray !important;
+	border-color: gray;
+    border-radius: 3px;
+    outline: 5px;
+    /* transition: all .3s ease-in-out; */
+}
+
+.basic-slide + label {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: -49px;
+    padding: 7px 14px;
+	color: white;
+    /* text-shadow: 0 1px 0 rgb(19 74 70 / 40%); */
+    background: gray;
+    /* transition: all .3s ease-in-out; */
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.basic-slide:hover {
+    border: 2px solid gray !important;
+
+}
+
+
+
+/* tab dashboard content */
+#teamblock{
+    border-radius: 2px;
+    background: #f0f0f1;
+    box-shadow: -34px 34px 68px #cccccd, 34px -34px 68px #ffffff;
+    padding: 25px 12px 12px 25px;
+    margin: 8px;
+}
+#teamblock nav{
+    background: #e2e2e2;
+    padding: 0px 0px;
+    border-radius: 2px;
+    border-radius: 5px;
+    background: #f0f0f1;
+    box-shadow: 5px 5px 10px #cccccd, -5px -5px 10px #ffffff;
+}
+.team-block-tab li{
+    margin: 0;
+    height: 100%;
+    padding: 15px 17px;
+    border-radius: 3px 3px 0px 0px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-right: 3px;
+    text-align: center;
+}
+.team-block-tab li.active {
+    background-color: #007cba;
+    color: #fff;
+    position: relative;
+}
+.team-block-tab li.active::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-top: 12px solid #007cba;
+    border-right: 6px solid transparent;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+    bottom: -12px;
+}
+#teamblock ul.team-block-tab {
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+.teamblock-content-wrap{
+    display: none;
+    opacity: 0;
+    -webkit-animation: display-none-transition 1s ease;
+    animation: display-none-transition 1s ease;
+}
+.teamblock-content-wrap.active{
+    display: block;
+    opacity: 1;
+    -webkit-animation: display-none-transition 1s ease;
+    animation: display-none-transition 1s ease;
+}
+@keyframes display-none-transition {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+    
+    1% {
+        display: block;
+    }
+    
+    100% {
+        opacity: 1;
+    }
+    }
+
+    @-webkit-keyframes display-none-transition {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+    
+    1% {
+        display: block;
+    }
+    
+    100% {
+        opacity: 1;
+    }
+    }
+.content-section-team .active{
+    display: block;
+    opacity: 1;
+}
+
+.content-section-team {
+    padding: 0px 0px;
+    border-radius: 5px;
+    background: #f0f0f1;
+    box-shadow: 5px 5px 10px #cccccd, -5px -5px 10px #ffffff;
+    margin-bottom: 20px;
+    
+}
